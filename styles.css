@@ -1,8 +1,54 @@
-body{
-  font-family: Impact,
-  font size: ,
-  font color: ,
-  padding: ,
+body {
+  background-color: rgb(50, 4, 253);
+}
+body {
+  font-family: monospace; /* military theme */
+  background-color: #1e1e1e;
+  color: #00ff00; /* Radar green text */
+  margin: 0;
+  padding: 20px;                        /* to help me understand the logic of */
+}
+
+/* 3 columns container,  auto rows */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.gun-card {
+  border: 1px solid #333;
+  padding: 15px;
+  background-color: #2a2a2a;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.gun-card:hover {
+  background-color: #3a3a3a;
+  cursor: pointer;
+}
+
+.gun-image {
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: none; /* Hidden ---by ----default */
+  margin: 10px auto;
+}
+
+.gun-desc {
+  display: none; /* Hidden---- by---- default */
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+  display: block;
+  margin-top: 5px;
 }
 
   
